@@ -5,7 +5,7 @@ from ultralytics import YOLO
 
 cap = cv2.VideoCapture(0)
 
-model = YOLO("best.pt")
+model = YOLO("best1.pt")
 
 
 '''💡 Computer Vision Insight
@@ -40,7 +40,7 @@ while True:
             width, height = x2-x1, y2-y1
             conf = int(box.conf[0]*100)
             
-            if conf < 70 :
+            if conf < 50 :
                 continue
             cls = int(box.cls[0])
             name = model.names[cls]
