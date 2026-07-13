@@ -1,1 +1,1 @@
-Computer Vision - YOLO, Model Train
+Computer Vision - YOLO
